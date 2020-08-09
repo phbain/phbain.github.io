@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 5.3333vw;
+            font-family: "Microsoft Yahei",sans-serif;
+        }
+        body{
+            background-color: #eff0f4;
+        }
+        .outer{
+            margin: 0 0.675rem;
+        }
+        .top-bar{
+            height: 4.35rem;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar i{
+            color: #656565;
+        }
+        .banner img{
+            width: 100%;
+            vertical-align: top;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .btn-wrapper{
+            margin-top: 1rem;
+            height: 6.1rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        .btn-wrapper a{
+            width: 8.175rem;
+            height: 2.6rem;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 2.6rem;
+        }
+        .btn-wrapper a:nth-child(1){
+            background-color: #f97053;
+        }
+        .btn-wrapper a:nth-child(2){
+            background-color: #c657ff;
+        }
+        .btn-wrapper a:nth-child(3){
+            background-color: #ff3971;
+        }
+        .btn-wrapper a:nth-child(4){
+            background-color: #1d92ff;
+        }
+        .list-head{
+            height: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list-head h2{
+            color: #24253d;
+            font-size: 0.825rem;
+            font-weight: normal;
+            border-left: 3px solid #3a84ff;
+            padding-left: .5em;
+        }
+        .list-head a{
+            color: #656565;
+            font-size: 0.7rem;
+        }
+        .list-content{
+            display: flex;
+            width: 18rem;
+            overflow: auto;
+        }
+        .list-item{
+            width: 8.175rem;
+            height: 8.075rem;
+            background-color: #fff;
+            padding: .55rem .5rem 0;
+            border-radius: 5px;
+            margin-right: 0.6rem;
+            flex: none;
+        }
+        .course-img{
+            width: 7.1rem;
+        }
+        .course-img img{
+            width: 100%;
+        }
+        .course-title{
+            color: #656565;
+            font-size: 0.7rem;
+            font-weight: normal;
+            margin: 0.35rem 0;
+        }
+        
+        .course-author{
+            display: flex;
+            align-items: center;
+        }
+        .course-author .avathar{
+            width: 1.05rem;
+            height: 1.05rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color:red;
+        }
+        .course-author .avathar img{
+            width: 100%;
+        }
+        .course-author .author{
+            color: #969393;
+            font-size: .6rem;
+            margin-left: 5px;
+        } 
+    </style>
+</head>
+<body>
+    <section class="outer">
+        <header class="top-bar">
+            <div class="menu">
+                <a class="menu-btn" href="javascript:;">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="title">
+                <h1>I Learn</h1>
+            </div>
+            <div class="search">
+                <a class="search-btn" href="javascript:;">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </header>
+        <div class="banner">
+            <a href="javascript:;">
+                <img src="./img/banner.jpg" alt="">
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="javascript:;">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                我的课程
+            </a>
+            <a href="javascript:;">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                明星老师
+            </a>
+            <a href="javascript:;">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                我的订阅
+            </a>
+            <a href="javascript:;">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                我的下载
+            </a>
+        </div>
+        <div class="course-list">
+            <div class="list-head">
+                <h2>最新课程</h2>
+                <a href="javascript:;">更多 +</a>
+            </div>
+            <div class="list-content">
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-list">
+            <div class="list-head">
+                <h2>最新课程</h2>
+                <a href="javascript:;">更多 +</a>
+            </div>
+            <div class="list-content">
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-list">
+            <div class="list-head">
+                <h2>最新课程</h2>
+                <a href="javascript:;">更多 +</a>
+            </div>
+            <div class="list-content">
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="course-img">
+                        <img src="./img/banner.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">
+                        摄影课程
+                    </h2>
+                    <div class="course-author">
+                        <div class="avathar">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="author">
+                            哈哈贼
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
